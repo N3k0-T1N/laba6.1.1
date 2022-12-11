@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин Шаров</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+			<!--Лого-->
+	<header class="header">
+		<div class="container text-center">
+			<img class = "imgborder" src="./img/logo.png" width="350" alt="">
+			<div class="display-4">Snow_Balls</div>
+			<p class="lead">Подари себе Новый Год!</p>
+		</div>
+	</header>
+			<!--Лого-->
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+							<!--Шар 1-->
+					<div class="col-md-6" data-price="350">
+						<div class="card mb-4" data-id="01">
+							<img class="product-img" src="/img/shar/shar-3.png" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Снежный Шар со Снеговиком</h4>
+								<p><small data-items-in-box class="text-muted">200 гр.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight">1 шт.</div>
+										<div class="price__currency">350 ₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+							<!--Шар 1-->
+							<!--Шар 2-->
+					<div class="col-md-6" data-price="500">
+						<div class="card mb-4" data-id="02">
+							<img class="product-img" src="/img/shar/shar-4.png" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Снежный шар со Страшилой</h4>
+								<p><small data-items-in-box class="text-muted">250 гр.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight">1 шт.</div>
+										<div class="price__currency">500 ₽</div>
+									</div>
+								</div>
+
+							<!--Шар 2-->
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+					<!--Корзина-->
+			<div class="col-md-4">
+
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ:</h4>
+						<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+						<div class="cart-wrapper">
+
+						</div>
+
+						<div class="cart-total">
+							<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
+							<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
+						</div>
+
+					</div>
+
+					<div id="order-form" class="card-body border-top">
+						<h5 class="card-title">Оформить заказ</h4>
+						<form>
+							<button type="submit" onclick="payAlerti()" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+
+				</div>
+
+
+			</div>
+					<!--Корзина-->
+		</div>
+	</div>
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+	<script src="./js/payAlert.js"></script>
+
+</body>
+
+</html>
